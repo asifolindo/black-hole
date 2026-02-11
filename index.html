@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SINGULARITY</title>
+
+  <!-- Your CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <!-- Model Viewer -->
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+</head>
+<body>
+  <!-- Gradient Background -->
+  <img class="image-gradient" src="resources/gradient.png" alt="gradient">
+  <div class="layer-blur"></div>
+
+  <!-- Main Flex Section -->
+  <div class="main-section">
+    <!-- Left: Text Content -->
+    <div class="text-content">
+      <header>
+        <h1 data-aos="fade-down" data-aos-duration="1500" class="logo">SINGULARITY</h1>
+        <nav>
+          <a data-aos="fade-down" data-aos-duration="1500" href="#">FORMATION</a>
+          <a data-aos="fade-down" data-aos-duration="2000" href="#">HORIZON</a>
+          <a data-aos="fade-down" data-aos-duration="2500" href="#">GRAVITY</a>
+          <a data-aos="fade-down" data-aos-duration="3000" href="#">TIME</a>
+        </nav>
+        <button data-aos="fade-down" data-aos-duration="3500" class="btn-signing">SIGNING</button>
+      </header>
+
+      <main>
+
+        <div class="content">
+          <div data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0" data-aos-duration="1500" class="tag-box">
+            <div class="tag">INTERACTIVE SPACE CONCEPT &wedbar;</div>
+          </div>
+          <h1 data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0" data-aos-duration="2000">
+            UNDERSTANDING<br>BLACK HOLES
+          </h1>
+          <p data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0" data-aos-duration="2500" class="description">
+            Explore how black holes form, bend space-time, and trap light — through an interactive 3D experience.
+          </p>
+          <div data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0" data-aos-duration="3000" class="buttons">
+            <a href="#" class="btn-get-started">Explore &gt;</a>
+            <a href="#" class="btn-signing-main">View Structure &gt;</a>
+          </div>
+          
+          
+        </div>
+         <div class="model-content">
+      <model-viewer src="model-compressed.glb"
+                    alt="Blackhole 3D model"
+                    auto-rotate
+                    auto-rotate-delay="0"
+                    camera-controls
+                    interaction-prompt="none"
+                    background-color="#000000"
+                    loading="lazy"
+                    style="width:90%; height: 100%;position: absolute;">
+      </model-viewer>
+    </div>
+
+       
+        
+      </main>
+      
+      
+    </div>
+
+    <!-- Right: Blackhole 3D Model -->
+     
+    
+  </div>
+
+  <!-- AOS Script -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  
+</body>
+</html>
